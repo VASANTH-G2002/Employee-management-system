@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[Employees] (
+    [EmpId]          VARCHAR (20)    NOT NULL,
+    [FirstName]      NVARCHAR (100)  NOT NULL,
+    [LastName]       NVARCHAR (100)  NULL,
+    [Email]          NVARCHAR (255)  NOT NULL,
+    [Mobile]         NVARCHAR (20)   NULL,
+    [DateOfBirth]    DATE            NULL,
+    [Address]        NVARCHAR (255)  NULL,
+    [City]           NVARCHAR (100)  NULL,
+    [State]          NVARCHAR (100)  NULL,
+    [Country]        NVARCHAR (100)  NULL,
+    [ZipCode]        NVARCHAR (20)   NULL,
+    [ProfileImg]     NVARCHAR (255)  NULL,
+    [About]          NVARCHAR (MAX)  NULL,
+    [EmployeeStatus] NVARCHAR (50)   NULL,
+    [Department]     NVARCHAR (100)  NULL,
+    [Designation]    NVARCHAR (100)  NULL,
+    [DateOfJoining]  DATE            NULL,
+    [ReportingId]    NVARCHAR (20)   NULL,
+    [CTC]            DECIMAL (18, 2) NULL,
+    [AccountNo]      NVARCHAR (50)   NULL,
+    [BankName]       NVARCHAR (100)  NULL,
+    [IFSCCode]       NVARCHAR (20)   NULL,
+    [Branch]         NVARCHAR (100)  NULL,
+    [AccountType]    NVARCHAR (50)   NULL,
+    [PasswordHash]   NVARCHAR (200)  NOT NULL,
+    [Role]           NVARCHAR (50)   NULL,
+    PRIMARY KEY CLUSTERED ([EmpId] ASC),
+    UNIQUE NONCLUSTERED ([Email] ASC)
+);
+
+Create Database EMS and add table Employees
